@@ -1,6 +1,6 @@
 //import React
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //imports for Apollo server
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
@@ -41,11 +41,11 @@ function App() {
     <Router>
       <>
         <Navbar />
-        <Switch>
+        <Routes>
           <Route path='/' component={SearchBooks}/>
           <Route path='/saved' component={SavedBooks}/>
           <Route render={() => <h1>Wrong Page</h1>}/>
-        </Switch>
+        </Routes>
       </>
       </Router>
     </ApolloProvider>
