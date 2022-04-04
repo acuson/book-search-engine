@@ -1,6 +1,6 @@
 //import React
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //imports for Apollo server
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
